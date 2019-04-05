@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import Smurf from './Smurf';
+import { SmurfList } from './StyledComponents';
 
 class Smurfs extends Component {
   render() {
     return (
-      <div className="Smurfs">
+      <SmurfList>
         <h1>Smurf Village</h1>
         <ul>
           {this.props.smurfs.map(smurf => {
@@ -19,7 +20,7 @@ class Smurfs extends Component {
             );
           })}
         </ul>
-      </div>
+      </SmurfList>
     );
   }
 }
