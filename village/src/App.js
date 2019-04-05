@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import { Route, NavLink } from "react-router-dom";
 import './App.css';
+import { SmurfApp } from './components/StyledComponents';
 import SmurfForm from './components/SmurfForm';
 import Smurfs from './components/Smurfs';
 
@@ -30,7 +31,7 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
+      <SmurfApp>
         <header className="headerbar">
           <div className="nav">
             <NavLink to="/">Smurf List</NavLink>
@@ -53,7 +54,7 @@ class App extends Component {
             />
           )}
         />
-      </div>
+      </SmurfApp>
     );
   }
 }
